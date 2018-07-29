@@ -9,10 +9,6 @@ class InstaPicRepository {
     }
 
     create(data) {
-        console.log('before create', data);
-
-        // return InstaPicModel.insert(data);
-
         const newPic = new InstaPicModel(data);
         return newPic.save();
     }
