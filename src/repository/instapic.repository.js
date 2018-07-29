@@ -2,9 +2,6 @@
 
 const InstaPicModel = require('./../models/instapic.model');
 
-
-
-
 class InstaPicRepository {
 
     find(query) {
@@ -24,8 +21,6 @@ class InstaPicRepository {
         return InstaPicModel.remove({instaCode: instaCode}, {multiple: true})
     }
 
-
 }
-
 
 module.exports = new InstaPicRepository();
